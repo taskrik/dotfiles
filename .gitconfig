@@ -1,0 +1,21 @@
+[color]
+	ui = true
+[user]
+	name = taskrik
+	email = tasos.krikonis@gmail.com
+[push]
+	default = current
+[pull]
+	default = current
+[branch]
+	autosetuprebase = always
+[fetch]
+	prune = true
+[rebase]
+	autosquash = true
+[alias]
+	pufowile = push --force-with-lease
+[core]
+	editor = sublime -w
+	excludesfile = ~/.gitignore
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
