@@ -1,0 +1,14 @@
+#### Editor-of-the-week aliases ####
+alias edit="sublime"
+
+#### Git aliases ####
+alias bam="git push && github browse"
+alias g='git status'
+alias gl="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit"
+alias gm="git checkout master"
+alias gp="git pull -r"
+alias gtrack='git branch -u origin/$(current_branch)'
+alias prune_branches='git checkout master && git fetch && git remote prune origin && git branch --merged master | grep -v "master$" | xargs git branch -d'
+
+#### System  specific aliases ####
+alias aliases="cat ~/dotfiles/.aliases && source ~/.zshrc"l
